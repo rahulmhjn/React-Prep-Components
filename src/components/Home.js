@@ -28,6 +28,10 @@ const Home = () => {
     navigate('/side-bar');
   };
 
+  const goToSearchbar = () => {
+    navigate('/search-bar');
+  };
+
   return (
     <div
       style={{
@@ -71,6 +75,21 @@ const Home = () => {
           onClick={goToInfiniteScroll}
         >
           Infinite Scroll
+        </div>
+        <div
+          style={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            height: '50px',
+            width: '200px',
+            backgroundColor: 'grey',
+            fontWeight: 'bold',
+            cursor: 'pointer',
+          }}
+          onClick={goToSearchbar}
+        >
+          Search Bar
         </div>
         <div
           style={{
