@@ -1,0 +1,60 @@
+[
+  {
+    "id": 1,
+    "name": "src",
+    "isFolder": true,
+    "children": [
+      {
+        "id": 2,
+        "name": "components",
+        "isFolder": true,
+        "children": [
+          {
+            "id": 3,
+            "name": "Home.js",
+            "isFolder": false
+          },
+          {
+            "id": 4,
+            "name": "App.js",
+            "isFolder": false
+          },
+          {
+            "id": 5,
+            "name": "ProgressBar",
+            "isFolder": true,
+            "children": [
+              {
+                "id": 6,
+                "name": "ProgressBar.js",
+                "isFolder": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+       "id":123,
+       "name": "utils",
+       "isFolder": true,
+       "children": [
+        {
+          "id":234,
+          "name": "utils.js",
+          "isFolder": false
+        }
+       ] 
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": ".env",
+    "isFolder":false
+  },
+  {
+    "id": 8,
+    "name": "package.json",
+    "isFolder": false
+  }
+]

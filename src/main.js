@@ -7,6 +7,7 @@ import Home from './components/Home';
 import InfiniteScroll from './components/InfiniteScroll';
 import ProgressBarContainer from './components/ProgressBar/ProgressBarContainer';
 import StarRating from './components/StarRating/StarRating';
+import SideBar from './components/Sidebar/SideBar';
 
 const Main = () => {
   return (
@@ -18,6 +19,7 @@ const Main = () => {
         <Route path="/infinite-scroll" element={<InfiniteScroll />} />
         <Route path="/progress-bar" element={<ProgressBarContainer />} />
         <Route path="/star-rating" element={<StarRating />} />
+        <Route path="/side-bar" element={<SideBar />} />
       </Routes>
     </BrowserRouter>
   );

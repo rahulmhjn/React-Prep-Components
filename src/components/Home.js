@@ -24,6 +24,10 @@ const Home = () => {
     navigate('/star-rating');
   };
 
+  const goToSidebar = () => {
+    navigate('/side-bar');
+  };
+
   return (
     <div
       style={{
@@ -114,6 +118,21 @@ const Home = () => {
           onClick={goToStarRating}
         >
           Star Rating
+        </div>
+        <div
+          style={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            height: '50px',
+            width: '200px',
+            backgroundColor: 'grey',
+            fontWeight: 'bold',
+            cursor: 'pointer',
+          }}
+          onClick={goToSidebar}
+        >
+          VS Code Sidebar
         </div>
       </div>
     </div>
