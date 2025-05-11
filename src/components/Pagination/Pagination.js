@@ -22,8 +22,7 @@ const Pagination = () => {
   };
 
   const handleNext = () => {
-    if (selectedPage + 1 < products.length - 1)
-      setSelectedPage((prev) => prev + 1);
+    if (selectedPage < noOfPages - 1) setSelectedPage((prev) => prev + 1);
   };
 
   const handlePrev = () => {
