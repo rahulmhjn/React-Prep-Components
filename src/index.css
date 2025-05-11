@@ -97,3 +97,39 @@
   right: 2px;
   bottom: 2px;
 }
+
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.products-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  width: 160px;
+  height: 160px;
+  padding: 20px;
+  margin: 5px;
+}
+
+.products-img {
+  height: 150px;
+  width: 150px;
+}
+
+.products-pagination {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.products-pagination-pagenumber {
+  border: 1px solid black;
+  padding: 5px;
+  margin: 2px;
+  cursor: pointer;
+}
