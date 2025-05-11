@@ -31,3 +31,69 @@
 .off {
   color: #ccc;
 }
+
+.outer {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  background-color: red;
+}
+.inner {
+  position: sticky;
+  top: 0;
+  right: 0;
+  height: 100px;
+  width: 100px;
+  background-color: yellow;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+}
+
+.tab-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.tab-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid red;
+  background-color: azure;
+  height: 200px;
+  width: 400px;
+  position: relative;
+}
+
+.tab-form-header {
+  display: flex;
+}
+
+.tab-form-title{
+  margin: 2px;
+  padding: 5px;
+  border: 1px solid black;
+  background-color: rgb(218, 237, 203);
+  cursor: pointer;
+}
+
+.tab-form-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin:10px;
+  height: 100%;
+  width: 100%
+}
+
+.tab-form .buttons {
+  position: absolute;
+  right: 2px;
+  bottom: 2px;
+}

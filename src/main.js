@@ -1,14 +1,16 @@
-import React from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router';
-import App from './components/App';
-import './index.css';
-import Pagination from './components/Pagination';
-import Home from './components/Home';
-import InfiniteScroll from './components/InfiniteScroll';
-import ProgressBarContainer from './components/ProgressBar/ProgressBarContainer';
-import StarRating from './components/StarRating/StarRating';
-import SideBar from './components/Sidebar/SideBar';
-import SearchBar from './components/SearchBar/SearchBar';
+import React from "react";
+import { BrowserRouter, Route, Routes } from "react-router";
+import App from "./components/App";
+import "./index.css";
+import Pagination from "./components/Pagination";
+import Home from "./components/Home";
+import InfiniteScroll from "./components/InfiniteScroll";
+import ProgressBarContainer from "./components/ProgressBar/ProgressBarContainer";
+import StarRating from "./components/StarRating/StarRating";
+import SideBar from "./components/Sidebar/SideBar";
+import SearchBar from "./components/SearchBar/SearchBar";
+import PracticeCSS from "./components/PracticeCSS/PracticeCSS";
+import TabForm from "./components/TabForm/TabForm";
 
 const Main = () => {
   return (
@@ -22,6 +24,8 @@ const Main = () => {
         <Route path="/star-rating" element={<StarRating />} />
         <Route path="/side-bar" element={<SideBar />} />
         <Route path="/search-bar" element={<SearchBar />} />
+        <Route path="/css-practice" element={<PracticeCSS />} />
+        <Route path="/tab-form" element={<TabForm />} />
       </Routes>
     </BrowserRouter>
   );
