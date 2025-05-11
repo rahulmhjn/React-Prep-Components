@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import BackButton from "../../utilityComponents/BackButton/BackButton";
 
 const PAGE_SIZE = 10;
 
@@ -35,6 +36,7 @@ const Pagination = () => {
 
   return (
     <div>
+      <BackButton />
       <h1>Products</h1>
       {products.length === 0 ? (
         <p>No Products Found</p>
@@ -67,6 +69,9 @@ const Pagination = () => {
                   onClick={() => handleClick(key)}
                   key={key}
                   className="products-pagination-pagenumber"
+                  style={
+                    selectedPage === key ? { backgroundColor: "green" } : {}
+                  }
                 >
                   {key + 1}
                 </div>
